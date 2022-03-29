@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Models\ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\ViewModels\" />
+  </ItemGroup>
 </Project>
