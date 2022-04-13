@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SalesWebMVC.Data;
 
@@ -37,7 +37,6 @@ void SeedData( IHost app)
     using ( var scope = scopedFactory.CreateScope())
     {
         var service = scope.ServiceProvider.GetService<SeedingService>();
-        Console.WriteLine("Entrei >>>>>");
         service.Seed();
     }
 }
